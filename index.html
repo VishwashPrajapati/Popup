@@ -56,20 +56,19 @@
     flex-direction: column;
     border-right: 1px solid gray;
     height: 90vh;
-    overflow: hidden;
-    overflow-y: scroll;
 }
 .left__column{
     position: relative;
     margin: 10px;  
     height: auto; 
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .left__title h6{
     font-size: 1rem;
     border-bottom: 1px solid orange;
     width: fit-content;
     color: orange;
-
 }
 .left__title p{
     font-size: 0.85rem;
@@ -103,19 +102,7 @@
     overflow-x: hidden;
     height: auto;
 }
-.gallary__images{
-}
-.gallary{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  
-}
-.gallary > img{
-  background-color: #f1f1f1;
-  margin: 10px;
-  text-align: center;   
-}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -147,12 +134,13 @@
         <div class="main__body">
             <div class="child__body">
                 <div class="left__side">
-                    <div class="avtar">
-                        <img src="02.png" alt="" width="100vh">
-                        <h6 class="title__border">Vishwash Prajapati</h6>
-                       <p class="m-0"><span id="time"></span></p>
-                    </div>
+    
                     <div class="left__column">
+                        <div class="avtar">
+                            <img src="02.png" alt="" width="100vh">
+                            <h6 class="title__border">Vishwash Prajapati</h6>
+                           <p class="m-0"><span id="time"></span></p>
+                        </div>
                         <div class="left__title">
                             <h6>Education : </h6>
                             <p>Diploma In Mechanical Engg.</p>
