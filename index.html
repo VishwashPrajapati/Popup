@@ -56,6 +56,8 @@
     flex-direction: column;
     border-right: 1px solid gray;
     height: 90vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 .left__column{
     position: relative;
@@ -63,15 +65,15 @@
     height: auto; 
 }
 .left__title h6{
-    font-size: 1em;
+    font-size: 1rem;
     border-bottom: 1px solid orange;
     width: fit-content;
     color: orange;
 
 }
 .left__title p{
-    font-size: 0.85em;
-    padding-left: 1em;
+    font-size: 0.85rem;
+    padding-left: 1rem;
 }
 .right__side{
     display: flex;
@@ -114,7 +116,9 @@
   margin: 10px;
   text-align: center;   
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 </style>
 </head>
