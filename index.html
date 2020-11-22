@@ -29,25 +29,32 @@
     height: 100vh;
     width: 100%;
 }
+.title__border{
+    color: orange;
+    border-bottom: 1px solid orange;
+}
 .child__body{
     display: flex;
     width: 95%;
     height: 90vh;
-    background-color:burlywood;
+    background-color:black;
 }
 .left__side{
+    color: white;
     display: flex;
     flex: 0.25;
-    background-color:cadetblue;
+    background-color:black;
     flex-direction: column;
+    border-right: 1px solid gray;
 }
 .left__column{
     margin: 10px;   
 }
 .left__title h6{
     font-size: 1em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid orange;
     width: fit-content;
+    color: orange;
 }
 .left__title p{
     font-size: 0.85em;
@@ -56,13 +63,14 @@
 .right__side{
     display: flex;
     flex: 0.75;
-    background-color:darkcyan;
+    background-color:black;
 }
 .avtar{
+    color: white;
     display: grid;
     place-content: center;
     padding: 20px;
-    background-color: darkgoldenrod;
+    background-color: black;
     height: 30vh;
     width: 100%;
     text-align: center;
@@ -98,7 +106,7 @@
 </style>
 </head>
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -113,7 +121,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <div class="container-fluid">
         <!-- <div class="jumbotron my-4 m-0">
             <h1 class="display-4 text-center">Current time is : <span id="time"></span> </h1>
@@ -124,7 +132,7 @@
                 <div class="left__side">
                     <div class="avtar">
                         <img src="02.png" alt="" width="100vh">
-                        <h6>Vishwash Prajapati</h6>
+                        <h6 class="title__border">Vishwash Prajapati</h6>
                        <p class="m-0"><span id="time"></span></p>
                     </div>
                     <div class="left__column">
@@ -134,7 +142,7 @@
                             <h6>Language Known : </h6>
                             <p>Hindi, English, Gujarati</p>
                             <h6>Programming Languages Known : </h6>
-                            <div class="w-100">
+                            <div class="w-100 p-2">
                                 <div class="progress mb-3">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 95%;"
                                         aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML 95%</div>
@@ -159,9 +167,9 @@
                                     <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
                                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Angular 50%</div>
                                 </div>
-        
                             </div>
-        
+                            <p class="m-0 text-center">Contact : 7405394701</p>
+                    <p class="m-0 text-center">Email : prajapativishwash@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -203,18 +211,13 @@
                 </div>
             </div>
         </div>  
-        
-        
-
     </div>
-    <footer class="bg-primary m-0 p-3">
+    <!-- <footer class="bg-primary m-0 p-3">
         <h6 class="text-center">SAMPLE PROJECT</h6>
-    </footer>
+    </footer> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
-
 $(document).ready(function(){
 
         $('.pop').on('click', function () {
